@@ -44,3 +44,15 @@
     right: 0;
   }
 }
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .titleSection {
+    flex-direction: column;
+    overflow: hidden;
+    .boxElement {
+      margin: 20px 0;
+      width: 300px;
+    }
+  }
+}
