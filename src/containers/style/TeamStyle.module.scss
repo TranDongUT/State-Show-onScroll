@@ -1,0 +1,37 @@
+.teamSection {
+  height: 100vh;
+  background: linear-gradient(180deg, #017c2c 50%, #fff 50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .member {
+    padding: 20px;
+    margin: 0 20px;
+    overflow: hidden;
+    background-color: #ffff;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px #a9a9a9;
+    animation: zoomIn 0.4s ease-out forwards;
+    h2 {
+      color: #017c2c;
+      margin-bottom: 15px;
+      font-weight: 500;
+    }
+    p {
+      font-weight: 450;
+      line-height: 1.5;
+    }
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    height: 0;
+    width: 0;
+    overflow: hidden;
+  }
+  to {
+    width: 200px;
+    height: 240px;
+  }
+}
